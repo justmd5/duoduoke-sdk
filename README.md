@@ -2,17 +2,17 @@
 
 
 
-## Requirement
+## 要求
 1. PHP >= 7.0
 2. **[Composer](https://getcomposer.org/)**
 3. ext-curl 拓展
 4. ext-json 拓展
 
-## install
+## 安装
 
 `composer require justmd5/duoduoke-sdk`
 
-### Usage
+### 使用
 
 ```php
 
