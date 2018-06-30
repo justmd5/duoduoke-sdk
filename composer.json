@@ -1,8 +1,15 @@
 {
     "name": "justmd5/duoduoke-sdk",
-    "description": "Package description here.",
+    "description": "多多客API SDK【拼多多开放平台】.",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "pinduoduo",
+        "duoduoke",
+        "拼多多",
+        "多多客",
+        "sdk"
+    ],
     "authors": [
         {
             "name": "丁海军",
@@ -15,6 +22,7 @@
         }
     },
     "require": {
+        "php": ">=7.0",
         "hanson/foundation-sdk": "^2.0"
     }
 }
