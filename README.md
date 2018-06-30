@@ -9,13 +9,13 @@
 <a href="https://packagist.org/packages/justmd5/duoduoke-sdk"><img src="https://img.shields.io/github/license/justmd5/duoduoke-sdk.svg" alt="License"></a>
 </p>
 
-## 要求
+### 要求
 1. PHP >= 7.0
 2. **[Composer](https://getcomposer.org/)**
 3. ext-curl 拓展
 4. ext-json 拓展
 
-## 安装
+### 安装
 
 `composer require justmd5/duoduoke-sdk`
 
@@ -39,7 +39,7 @@ $duoduoke = new DuoDuoKe($config);
 ```php
 $result   = $duoduoke->request('pdd.ddk.goods.detail', ['goods_id_list' => ['395581006']]);
 ```
-## 文档
+### 文档
 [拼多多开放平台](http://open.pinduoduo.com/)  · [官方文档](http://open.pinduoduo.com/#/apidocument)
 
 
