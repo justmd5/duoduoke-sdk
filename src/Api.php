@@ -76,7 +76,7 @@ class Api extends AbstractAPI
                 $item = json_encode($item);
             }
             if (is_bool($item)) {
-                $item = ['false', 'true'][strval($item)];
+                $item = ['false', 'true'][intval($item)];
             }
         });
 
