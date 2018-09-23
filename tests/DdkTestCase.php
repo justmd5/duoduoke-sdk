@@ -25,7 +25,6 @@ abstract class DdkTestCase extends TestCase
     protected function setUp()
     {
         parent::setUp();
-//        if()
         $config = require_once __DIR__.'/config.php';
         $this->app = new DuoDuoKe($config);
         $this->goodsIdList = $config['goodsList'];
