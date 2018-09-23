@@ -6,7 +6,7 @@ namespace Justmd5\DuoDuoKeTest;
  * Created for duoduoke-sdk.
  * User: 丁海军
  * Date: 2018/9/21
- * Time: 16:30
+ * Time: 16:30.
  */
 
 namespace Justmd5\DuoDuoKeTest;
@@ -25,7 +25,7 @@ class GoodsDetailTest extends DdkTestCase
     }
 
     /**
-     * @param  array $result
+     * @param array $result
      *
      * @depends   testIsArray
      */

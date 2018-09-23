@@ -9,16 +9,16 @@ use PHPUnit\Framework\TestCase;
  * Created for duoduoke-sdk.
  * User: 丁海军
  * Date: 2018/9/21
- * Time: 16:34
+ * Time: 16:34.
  */
 abstract class DdkTestCase extends TestCase
 {
     /**
-     * @var $goodsIdList array
+     * @var array
      */
     protected $goodsIdList;
     /**
-     * @var $app DuoDuoKe
+     * @var DuoDuoKe
      */
     protected $app;
 
@@ -26,8 +26,8 @@ abstract class DdkTestCase extends TestCase
     {
         parent::setUp();
 //        if()
-        $config            = require_once __DIR__ . '/config.php';
-        $this->app         = new DuoDuoKe($config);
+        $config = require_once __DIR__.'/config.php';
+        $this->app = new DuoDuoKe($config);
         $this->goodsIdList = $config['goodsList'];
     }
 }

@@ -3,7 +3,7 @@
  * Created for duoduoke-sdk.
  * User: 丁海军
  * Date: 2018/9/21
- * Time: 16:24
+ * Time: 16:24.
  */
 return [
     'key'       => '9f93a0421d324156b657bcb3085xxx',
