@@ -21,8 +21,17 @@
             "Justmd5\\DuoDuoKe\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Justmd5\\DuoDuoKeTest\\": "tests/"
+        }
+    },
     "require": {
         "php": ">=7.0",
-        "hanson/foundation-sdk": "^2.0"
+        "hanson/foundation-sdk": "^2.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
     }
 }
