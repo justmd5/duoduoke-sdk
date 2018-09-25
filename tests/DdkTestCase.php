@@ -22,15 +22,15 @@ abstract class DdkTestCase extends TestCase
      */
     protected $app;
     /**
-     * @var $config array
+     * @var array
      */
     protected $config;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->config      = require __DIR__ . '/config.php';
-        $this->app         = new DuoDuoKe($this->config);
+        $this->config = require __DIR__.'/config.php';
+        $this->app = new DuoDuoKe($this->config);
         $this->goodsIdList = $this->config['goodsList'];
     }
 }
