@@ -9,5 +9,6 @@ return [
     'key'       => '9f93a0421d324156b657bcb3085xxx',
     'secret'    => '8b60bd75fbbf6fe74a20e7e22238448d322xxx',
     'debug'     => 0,
+    'p_id'      => ['1796079_18147001'],
     'goodsList' => ['74948965'],
 ];
