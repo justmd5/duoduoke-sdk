@@ -50,7 +50,7 @@ $result   = $duoduoke->request('pdd.ddk.goods.detail', ['goods_id_list' => ['395
 ###  单元测试[on working]
 配置 config 中所需配置
 ```shell
-./vendor/bin/phpunit -c phpunit.xml.dist 
+composer test 
 ```
 
 ## License
