@@ -18,7 +18,7 @@ class Api extends AbstractAPI
 
     public function __construct($key, $secret)
     {
-        $this->key    = $key;
+        $this->key = $key;
         $this->secret = $secret;
     }
 
@@ -49,16 +49,16 @@ class Api extends AbstractAPI
      */
     public function request($method, $params, $data_type = 'JSON')
     {
-        $http                  = $this->getHttp();
-        $params                = $this->paramsHandle($params);
-        $params['client_id']   = $this->key;
+        $http = $this->getHttp();
+        $params = $this->paramsHandle($params);
+        $params['client_id'] = $this->key;
         $params['sign_method'] = 'md5';
-        $params['type']        = $method;
-        $params['data_type']   = $data_type;
-        $params['timestamp']   = strval(time());
-        $params['sign']        = $this->signature($params);
-        $response              = call_user_func_array([$http, 'post'], [self::URL, $params]);
-        $responseBody          = strval($response->getBody());
+        $params['type'] = $method;
+        $params['data_type'] = $data_type;
+        $params['timestamp'] = strval(time());
+        $params['sign'] = $this->signature($params);
+        $response = call_user_func_array([$http, 'post'], [self::URL, $params]);
+        $responseBody = strval($response->getBody());
 
         return strtolower($data_type) == 'json' ? json_decode($responseBody, true) : $responseBody;
     }
