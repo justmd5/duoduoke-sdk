@@ -18,7 +18,7 @@ class Api extends AbstractAPI
 
     public function __construct($key, $secret)
     {
-        $this->key = $key;
+        $this->key    = $key;
         $this->secret = $secret;
     }
 
@@ -30,15 +30,14 @@ class Api extends AbstractAPI
     private function signature($params)
     {
         ksort($params);
-        $sign = $this->secret;
-        array_walk($params, function ($item, $key) use (&$sign) {
-            if (!is_array($item) && '@' != substr($item, 0, 1)) {
-                $sign .= sprintf('%s%s', $key, $item);
+        $paramsStr = '';
+        array_walk($params, function ($item, $key) use (&$paramsStr) {
+            if ('@' != substr($item, 0, 1)) {
+                $paramsStr .= sprintf('%s%s', $key, $item);
             }
         });
-        $sign .= $this->secret;
 
-        return strtoupper(md5($sign));
+        return strtoupper(md5(sprintf('%s%s%s', $this->secret, $paramsStr, $this->secret)));
     }
 
     /**
@@ -50,18 +49,18 @@ class Api extends AbstractAPI
      */
     public function request($method, $params, $data_type = 'JSON')
     {
-        $http = $this->getHttp();
-        $params = $this->paramsHandle($params);
-        $params['client_id'] = $this->key;
+        $http                  = $this->getHttp();
+        $params                = $this->paramsHandle($params);
+        $params['client_id']   = $this->key;
         $params['sign_method'] = 'md5';
-        $params['type'] = $method;
-        $params['data_type'] = $data_type;
-        $params['timestamp'] = strval(time());
-        $params['sign'] = $this->signature($params);
-        $response = call_user_func_array([$http, 'post'], [self::URL, $params]);
-        $responseBody = strval($response->getBody());
+        $params['type']        = $method;
+        $params['data_type']   = $data_type;
+        $params['timestamp']   = strval(time());
+        $params['sign']        = $this->signature($params);
+        $response              = call_user_func_array([$http, 'post'], [self::URL, $params]);
+        $responseBody          = strval($response->getBody());
 
-        return $data_type ? json_decode($responseBody, true) : $responseBody;
+        return strtolower($data_type) == 'json' ? json_decode($responseBody, true) : $responseBody;
     }
 
     /**
