@@ -1,7 +1,7 @@
 <h1 align="center">多多客API SDK【拼多多开放平台】</h1>
 
 <p align="center">
-<a href="https://styleci.io/repos/139239444"><img src="https://styleci.io/repos/139239444/shield?branch=master" alt="styleci"></a>
+<a href="https://styleci.io/repos/153218715"><img src="https://styleci.io/repos/153218715/shield?branch=master" alt="styleci"></a>
 <a href="https://packagist.org/packages/justmd5/duoduoke-sdk"><img src="https://img.shields.io/packagist/php-v/justmd5/duoduoke-sdk.svg" alt="PHP from Packagist"></a>
 <a href="https://packagist.org/packages/justmd5/duoduoke-sdk"><img src="https://poser.pugx.org/justmd5/duoduoke-sdk/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/justmd5/duoduoke-sdk"><img src="https://img.shields.io/github/stars/justmd5/duoduoke-sdk.svg?style=social&label=Stars" alt="GitHub stars"></a>
