@@ -9,6 +9,7 @@
 <a href="https://packagist.org/packages/justmd5/duoduoke-sdk"><img src="https://img.shields.io/github/license/justmd5/duoduoke-sdk.svg" alt="License"></a>
 </p>
 
+> 现推荐使用作者最新产出的[拼多多API SDK【拼多多开放平台】](https://github.com/justmd5/pindoduo-sdk) 
 ### 要求
 1. PHP >= 7.0
 2. **[Composer](https://getcomposer.org/)**
