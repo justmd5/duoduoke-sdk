@@ -20,7 +20,7 @@ class DuoDuoKe extends Foundation
      */
     public function request($method, $params = [])
     {
-        $api = new Api($this['config']['key'], $this['config']['secret']);
+        $api = new Api($this->getConfig('key'), $this->getConfig('secret'));
 
         return $api->request($method, $params);
     }
