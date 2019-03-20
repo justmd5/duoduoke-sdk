@@ -30,6 +30,7 @@ require __DIR__ . '/vendor/autoload.php';
 $config = [
     'key'    => 'xxxxxx69e3940c6b93xxxxxx',
     'secret' => 'c2eda0c398xxxxxxbd63ff57bf22c05xxxxxx',
+    'debug'  => false
 ];
 $duoduoke = new DuoDuoKe($config);
 
