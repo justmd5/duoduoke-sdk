@@ -7,6 +7,7 @@
 <a href="https://packagist.org/packages/justmd5/duoduoke-sdk"><img src="https://img.shields.io/github/stars/justmd5/duoduoke-sdk.svg?style=social&label=Stars" alt="GitHub stars"></a>
 <a href="https://packagist.org/packages/justmd5/duoduoke-sdk"><img src="https://poser.pugx.org/justmd5/duoduoke-sdk/v/unstable.svg" alt="Latest Unstable Version"></a>
 <a href="https://packagist.org/packages/justmd5/duoduoke-sdk"><img src="https://img.shields.io/github/license/justmd5/duoduoke-sdk.svg" alt="License"></a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fjustmd5%2Fduoduoke-sdk?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjustmd5%2Fduoduoke-sdk.svg?type=shield"/></a>
 </p>
 
 > 现推荐使用作者最新产出的[拼多多API SDK【拼多多开放平台】](https://github.com/justmd5/pindoduo-sdk) 
@@ -59,3 +60,6 @@ composer test
 
 MIT
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjustmd5%2Fduoduoke-sdk.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjustmd5%2Fduoduoke-sdk?ref=badge_large)
