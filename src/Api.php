@@ -9,15 +9,17 @@
 namespace Justmd5\DuoDuoKe;
 
 use Hanson\Foundation\AbstractAPI;
+use Hanson\Foundation\Foundation;
 
 class Api extends AbstractAPI
 {
     const URL = 'http://gw-api.pinduoduo.com/api/router';
-    private $key;
-    private $secret;
+    protected $key;
+    protected $secret;
 
-    public function __construct($key, $secret)
+    public function __construct(Foundation $app,$key, $secret)
     {
+        parent::__construct($app);
         $this->key = $key;
         $this->secret = $secret;
     }
