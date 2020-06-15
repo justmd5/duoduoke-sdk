@@ -17,7 +17,7 @@ class Api extends AbstractAPI
     protected $key;
     protected $secret;
 
-    public function __construct(Foundation $app,$key, $secret)
+    public function __construct(Foundation $app, $key, $secret)
     {
         parent::__construct($app);
         $this->key = $key;
